@@ -59,3 +59,21 @@ for x in numbers:
 numbers = {10: "Ten", 20: "Twenty", 30: "Thirty", 40: "Forty"}
 for x in numbers.items():
     print(x)
+ # break statement
+ # finding the first even number
+numbers = [1, 3, 5, 2, 7, 9]
+for number in numbers:
+     if number % 2 == 0:
+         print(f"Found an even number: {number}")
+         break
+     else:
+         print(f"This number is odd: {number}")
+print("Loop finished.")
+# continue statement
+# printing only odd
+numbers = [1, 2, 3, 4, 5, 6]
+for number in numbers:
+    if number %2 == 0:
+        continue    #skip even numbers
+    print(f"This number is odd: {number}")
+    
