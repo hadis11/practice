@@ -111,3 +111,16 @@ message = "My name is {} and I am {} years old.".format(name, age)
 print(message)
 my_string = "hello world".upper()
 print(my_string)
+
+#input function
+name = input("what is your name? ")
+print("Hello," , name)
+#getting a number
+age = input("Enter your age: ")
+age = int(age) #covert the input string to an integer
+print("You are", age , "years old.")
+# basic calculator
+num1 = float(input("Enter the first number:"))
+num2 = float(input("Enter the scond number:"))
+sum = num1 + num2
+print("The sum is:", sum)
