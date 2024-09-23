@@ -45,7 +45,52 @@ string = ["pharmasist", "hadis", "Do it,you can", "I Love You"]
 max_string = max(string, key=len)
 print("do The largest string is: " , max_string)
 
-    
+# while loop practice
+# Print numbers 1 to 10 but stop the loop when the number reaches 7
+count = 0
+while count < 7 :
+    count+=1
+    print(count)
+    if count == 6 :
+        break
+#gpt
+i = 1
+while i <= 10 :
+    if i == 7:
+        break
+    print(i)
+    i+=1
+# Print all even numbers between 1 and 10 but skip the number 6
+i = 0 
+while i <=8 and i % 2 ==0 :
+    i+=2
+    if i ==6 :
+        continue
+    print (i)
+#gpt
+i = 1
+while i <= 10 :
+    i+=1
+    if i == 6:
+        continue
+    elif i % 2 ==0 :
+        print(i)
+# separate even & odd number from the list
+a = [1, 2, 3, 4, 5, 10, 7, 9, 8]
+b= []
+c= []
+for i in a:
+    if i %2 ==0:
+        b.append (i)
+        b.sort()
+        # b += [i]
+    else:
+        c.append(i)
+        c.sort()
+        # c += [i]
+print("even numbers list:", b)
+print("odd numbers list:", c)
+
         
 
 
