@@ -90,3 +90,39 @@ for i in a:
         # c += [i]
 print("even numbers list:", b)
 print("odd numbers list:", c)
+# write a program that takes a number as input and prints all even numbers from 1 to that number
+number =int(input("write a number:"))
+i = 1
+while i <= number:
+    if i %2 ==0 :
+     print(i)
+    i += 1
+# write a program that asks the user to input a password until they enter "password"
+#gpt
+while True :
+    password = input("enter password:")
+    if password == "password":
+        print('right,welcome')
+        break
+    else:
+        print("Incorrect password, try again")
+        continue
+# write a program that prints all numbers from 1 to 10, skipping 5 
+i = 1
+while i <=10 :
+    if i == 5 :
+        i+= 1   #gpt: increase i  before skipping the loop
+        continue
+    print(i)
+    i +=1
+# write a program that calculates the sum of all numbers from 1 to a user-given number, using a while loop and break
+total = 0
+i = 1
+User_number = int(input("add number:"))
+while i <= User_number:
+    total +=i
+    if i > User_number:
+        break
+    i+=1
+print("the total sum is:",total)
+
