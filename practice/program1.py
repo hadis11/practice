@@ -125,4 +125,15 @@ while i <= User_number:
         break
     i+=1
 print("the total sum is:",total)
+# write program that give non-numeric & non-alphabet of bellow list
+a = "abrt123?@#!54o?!"
+b= "?@#!"
+c = []
+for char in a:
+    #if char == '?' or char =='@' or char=='#' or char=='!' :
+    if char in b:
+       c.append(char) 
+print(c)
+
+
 
