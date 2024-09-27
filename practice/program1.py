@@ -23,7 +23,6 @@ for i in range(1,101):
     elif i%5 == 0:
         print("divisible by 5 : ", i)
 # Sum of List Elements: Write a program that sums up all the elements in a given list [1, 2, 3, 4, 5] using a for loop.
-#gpt
 numbers = [1, 2, 3, 4, 5]
 total =0
 for i in numbers:
@@ -135,5 +134,50 @@ for char in a:
        c.append(char) 
 print(c)
 
-
+# how many s, g  ?
+a= ["s", "s", 's', 'g', 's', 'c', 's']
+s= 0
+g =0
+for i in a:
+    if i == "s":
+        s+=1
+    elif i == "g":
+         g+=1
+print("count s :", s)
+print("count g :", g)
+# how many s, g ? , method 2 :
+a= ["s", "s", 's', 'g', 's', 'c', 's']
+count_s = a.count("s")
+print("count s:", count_s)
+count_g = a.count("g")
+print("count g :", count_g)
+# how many s, g before c ?
+a= ["s", "s", 's', 'g', 's', 'c', 's']
+s = 0
+g = 0
+for i in a:
+    if i == "s": 
+        s +=1
+    if i == "g":
+        g+=1
+    if i== "c":
+        break
+print("count s before c:",s)
+print("count g before c:",g)
+# how many s, g before c ? method 2:
+a= ["s", "s", 's', 'g', 's', 'c', 's']
+#gpt
+count_s = 0
+count_g = 0
+i = 0
+while i < len(a):  #while True :  you can use True instead of write condition that is True 
+    if a[i]== "c":
+        break
+    elif a[i]== "s":
+        count_s +=1
+    elif a[i]== 'g':
+        count_g +=1
+    i+=1
+print("count s before c:", count_s)
+print("count g before c:", count_g)
 
