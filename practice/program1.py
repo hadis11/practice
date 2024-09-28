@@ -181,3 +181,58 @@ while i < len(a):  #while True :  you can use True instead of write condition th
 print("count s before c:", count_s)
 print("count g before c:", count_g)
 
+a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15]
+count_positives = 0
+sum_negatives = 0
+for i in a: 
+    if 0<i:
+        count_positives +=1
+    elif i<0:
+        sum_negatives +=i
+print([count_positives,sum_negatives])
+b= [0, 2, 3, 0, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14]
+count_positives = 0
+sum_negatives= 0
+for i in b:
+    if 0< i:
+        count_positives +=1
+    elif i<0:
+        sum_negatives +=i
+print([count_positives,sum_negatives ])   
+c = [1]
+count_positives = 0
+sum_negatives = 0
+for i in c:
+    if 0<i:
+        count_positives+=1
+    elif i<0:
+        sum_negatives +=i
+print([count_positives, sum_negatives])       
+d = [-1]
+count_positives = 0
+sum_negatives = 0
+for i in d:
+    if 0<i:
+         count_positives+=1
+    elif i<0 :
+        sum_negatives+=i
+print([count_positives,sum_negatives]) 
+e = [0,0,0,0,0,0,0,0,0]
+count_positives = 0
+sum_negatives= 0
+for i in e:
+    if 0<i:
+         count_positives+=1
+    elif i<0 :
+        sum_negatives+=i
+print([count_positives,sum_negatives]) 
+f = []
+count_positives = []
+sum_negatives = []
+for i in f:
+    if 0<i:
+        count_positives+=1
+    elif i<0 :
+        sum_negatives +=i
+print([count_positives,sum_negatives ])
+
